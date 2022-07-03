@@ -19,3 +19,13 @@ spring.kafka.producer.topic=transaction-events
 Note: I have used base64 encoading to encrypt datasource properties and placed outside the artifacts/jar. below command was used to run jar from commandline 
   java -jar <jar-name> -Dspring.config.location=application.properties
 application.properties mentioned above in the argument is outside of the artifact.
+<br><br>
+
+Sample request:<br>
+url: http://localhost:8080/api/v1/cashreceiver<br>
+HTTP method: POST<br>
+request body: {
+    "cashId":4,
+    "stocks":3,
+    "amounts":200
+}
