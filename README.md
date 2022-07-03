@@ -6,13 +6,13 @@ This project highlights following.
 <br><br>
 In order to connect with Confluent cloud we need API Keys consist of Api key and a secret. You can generate API Keys from Confluent.
 
-spring.kafka.properties.bootstrap.servers =pkc-ymrq7.us-east-2.aws.confluent.cloud:9092
-spring.kafka.properties.sasl.mechanism=PLAIN
-spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username='<API Keys Goes here>'   password='<Secret goes here>';
-spring.kafka.properties.security.protocol=SASL_SSL
+spring.kafka.properties.bootstrap.servers =pkc-ymrq7.us-east-2.aws.confluent.cloud:9092<br>
+spring.kafka.properties.sasl.mechanism=PLAIN<br>
+spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username='<API Keys Goes here>'   password='<Secret goes here>';<br>
+spring.kafka.properties.security.protocol=SASL_SSL<br>
 
-spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.IntegerSerializer
-spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.IntegerSerializer<br>
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer<br>
 spring.kafka.producer.topic=transaction-events
  <br>
   
